@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Chúc mừng 8/3</title>
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#ff6fa5,#ffb6c1);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.khung{
+    background:rgba(255,255,255,0.15);
+    padding:40px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+}
+
+h1{
+    font-size:50px;
+}
+
+p{
+    font-size:20px;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#ff3d7f;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#ffe3ec;
+}
+
+#loichuc{
+    margin-top:20px;
+    font-size:22px;
+    display:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="khung">
+    <h1>Chúc Mừng 8/3 🌸</h1>
+    <p>Ngày Quốc Tế Phụ Nữ</p>
+
+    <button onclick="hien()">Nhận lời chúc</button>
+
+    <div id="loichuc">
+        Chúc bạn luôn xinh đẹp, vui vẻ và hạnh phúc mỗi ngày.
+    </div>
+</div>
+
+<script>
+function hien(){
+    document.getElementById("loichuc").style.display="block";
+}
+</script>
+
+</body>
+</html>
